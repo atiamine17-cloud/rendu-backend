@@ -101,9 +101,10 @@ if (isset($_GET['ville']) && !empty($_GET['ville'])) {
         <p><strong>Humidité :</strong> <?php echo $donnees['main']['humidity']; ?>%</p>
     <?php endif; ?>
 
-    // Traitement des erreurs
+   <?php
+   // Traitement des erreurs
  
-    <?php if ($erreur): ?>
+     if ($erreur): ?>
         <p style="color: red;"><?php echo $erreur; ?></p>
     <?php endif; ?>
 
